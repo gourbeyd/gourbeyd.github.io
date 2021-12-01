@@ -24,19 +24,19 @@ You are visitor number <img src="https://profile-counter.glitch.me/05t3/count.sv
 </a>
 
 <a href="https://www.linkedin.com/in/stephen-kageche-591193196/">
-  <img align="left" alt="Stephen Kageche | "LinkedIn" width="22px" src="../../assets/img/Posts/resources/linkedin.svg" />
+  <img align="left" alt="Stephen Kageche | LinkedIn" width="22px" src="../../assets/img/Posts/resources/linkedin.svg" />
 </a>
 
 <a href="https://github.com/05t3/05t3">
-  <img align="left" alt="Stephen Kageche | "Github" width="22px" src="../../assets/img/Posts/resources/github.svg" />
+  <img align="left" alt="Stephen Kageche | Github" width="22px" src="../../assets/img/Posts/resources/github.svg" />
 </a>
 
 <a href="https://www.linkedin.com/in/stephen-kageche-591193196/">
-  <img align="left" alt="Stephen Kageche" | "Discord" width="22px" src="../../assets/img/Posts/resources/discord.svg" />
+  <img align="left" alt="Stephen Kageche | Discord" width="22px" src="../../assets/img/Posts/resources/discord.svg" />
 </a>
 
 <a href="https://open.spotify.com/user/draidskxf4vzsrhv8xef72t8a?si=667fe12d67ca429b">
-  <img align="left" alt="Stephen Kageche" | "Spotify" width="22px" src="../../assets/img/Posts/resources/spotify-2.svg" />
+  <img align="left" alt="Stephen Kageche | Spotify" width="22px" src="../../assets/img/Posts/resources/spotify-2.svg" />
 </a>
 
 <a href="mailto:stevegeche@gmail.com">
