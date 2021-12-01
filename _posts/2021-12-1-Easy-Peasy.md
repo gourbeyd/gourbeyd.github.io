@@ -4,7 +4,7 @@ title: "Easy peasy"
 date: 2021-12-1
 image: ../../assets/img/Posts/easypeasy.png
 categories: [Tryhackme, Easy]
-#tags: [data carving, file recovery]
+tags: [cyberchef, gobuster, john, linepeas, pspy64, roth13]
 ---
 
 # Prerequisite
