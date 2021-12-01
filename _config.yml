@@ -8,7 +8,7 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: ColdFusionX                          # the main title
+title: Oste's Blog                          # the main title
 
 tagline: CTF Player | Pentester | InfoSec Enthusiast # it will display as the sub-title
           
@@ -18,23 +18,23 @@ description: >-                        # used by seo meta and the atom feed
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'https://oste.github.io'
 
-author: Mayank Deshmukh               # change to your full name
+author: Stephen Kageche               # change to your full name
 
 avatar: /assets/img/sample/profile.jpg   # support internet resources
 
 github:
-  username: ColdFusionX             # change to your github username
+  username: 05t3            # change to your github username
 
 twitter:
-  username: ColdFusionX_            # change to your twitter username
+  username: oste_ke            # change to your twitter username
 
 social:
-  name: Mayank Deshmukh                  # it will shows as the copyright owner in Footer
+  name: Stephen Kageche                  # it will shows as the copyright owner in Footer
   email: coldfusionx@outlook.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/ColdFusionX_      # change to your twitter homepage
-    - https://github.com/ColdFusionX       # change to your github homepage
+    - https://twitter.com/oste_ke      # change to your twitter homepage
+    - https://github.com/05t3       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
