@@ -2,7 +2,9 @@
 layout: post
 title: "File Recovery"
 date: 2021-12-1
-image: ../../assets/img/Posts/groovy.jpg
+image: ../../assets/img/Posts/file recovery.jpg
+categories: [DFIR]
+tags: [data carving, file recovery]
 ---
 
 # File Recovery and Data Carving with Foremost, Scalpel, and Bulk Extractor
@@ -92,8 +94,7 @@ Although Bulk Extractor is quite capable of recovering and carving image, video,
 
 _Source: Digital Forensics with Kali Linux - Shiva V.N. Parasram_
 
-
-### **How to install:** 
+### **How to install:**
 
 `sudo apt install bulk-extractor`
 
