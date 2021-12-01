@@ -59,8 +59,8 @@ Cras neque ex, tincidunt ac dapibus sed, placerat quis ex. Phasellus nibh purus,
 
 <hr>
 
-<p align="left"> <img src="https://github-readme-stats.vercel.app/api?username=05t3&show_icons=true&theme=radical" alt="abhisheknaiidu" />
-<p align="left"> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=05t3&layout=compact&theme=radical" alt="abhisheknaiidu" />  
+<p align="left"> <img src="https://github-readme-stats.vercel.app/api?username=05t3&show_icons=true&theme=radical" alt="05t3" />
+<p align="left"> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=05t3&layout=compact&theme=radical" alt="05t3" />  
   
 <hr>
 
@@ -126,15 +126,15 @@ Cras neque ex, tincidunt ac dapibus sed, placerat quis ex. Phasellus nibh purus,
 **05t3/05t3** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
-
-- 🔭 I’m currently working on Docker and Docker Security
-- 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
 - 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
 -->
+
+- 🐳 I’m currently working on Docker and Docker Security
+- 🐞 I’m currently learning Malware Analysis
+- 🤔 I’m looking for help with DFIR resources
+- 📫 How to reach me: Twitter, LinkedIn
+- 🙎🏾‍♂️ Pronouns: He/Him
+- ❤ I love: Rock/Jazz/LoFi beats/Afro beats/ , Adventure, Anime and networking
 
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="oste" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF5F5F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
