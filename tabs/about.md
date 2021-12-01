@@ -50,7 +50,7 @@ You are visitor number <img src="https://profile-counter.glitch.me/05t3/count.sv
 <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 -->
 
-<img align="right" alt="GIF" src="https://github.com/KellyEgesa/KellyEgesa/blob/master/assets/code.gif" width="375" height="240" />
+<img align="right" alt="GIF" src="../../assets/img/Posts/resources/code.gif" width="375" height="240" />
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget volutpat velit. Integer nec aliquam nisl. Aenean pharetra congue arcu quis vestibulum.
 
