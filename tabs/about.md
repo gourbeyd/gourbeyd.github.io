@@ -64,15 +64,13 @@ Cras neque ex, tincidunt ac dapibus sed, placerat quis ex. Phasellus nibh purus,
   
 <hr>
 
-</br>
-
 ### Operating Systems & Virtualisation Software Familiar with
 
 | OS & VM's                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div display="space-between" width="100px"><img align="left" width="45px" src="../../assets/img/Posts/resources/linux.svg" alt="Linux"><img align="left" width="45px" src="../../assets/img/Posts/resources/windows.svg" alt="Windows"><img align="left" width="45px" src="../../assets/img/Posts/resources/docker.svg" alt="Docker"><img align="left" width="45px" src="../../assets/img/Posts/resources/vmware%20(1).svg" alt="VMware"><img align="left" width="45px" src="../../assets/img/Posts/resources/virtualbox-icon.svg" alt="VirtualBox"> |
 
-</br>
+<hr>
 
 ### Web Server's & CMS Familiar with
 
@@ -80,7 +78,7 @@ Cras neque ex, tincidunt ac dapibus sed, placerat quis ex. Phasellus nibh purus,
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div display="flex" align="left" justify-content="space-between" align-items="centre" width="100%"><img align="left" width="45px" src="../../assets/img/Posts/resources/apache-13.svg" alt="Apache"><img align="left" width="65px" src="../../assets/img/Posts/resources/nginx-1.svg" alt="nginx"><img align="left" width="45px" src="../../assets/img/Posts/resources/wordpress-blue.svg" alt="wordpress"><img align="left" width="45px" src="../../assets/img/Posts/resources/joomla.svg" alt="joomla"></div> |
 
-</br>
+<hr>
 
 ### Coding Arsenal
 
@@ -88,7 +86,7 @@ Cras neque ex, tincidunt ac dapibus sed, placerat quis ex. Phasellus nibh purus,
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | <div display="space-between" width="100%"><img width="45px" align="right" src="../../assets/img/Posts/resources/Vimlogo.svg" alt="Vim"><img width="45px" align="right" src="../../assets/img/Posts/resources/Visual_Studio_Code_1.35_icon.svg" alt="Vscode"><img width="45px" align="right" src="../../assets/img/Posts/resources/sublime-text.svg" alt="Sublime"></div> |
 
-</br>
+<hr>
 
 ### Programming & Scripting
 
@@ -96,7 +94,7 @@ Cras neque ex, tincidunt ac dapibus sed, placerat quis ex. Phasellus nibh purus,
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div display="flex" align="left" justify-content="space-between" align-items="centre" width="100%"><img align="left" width="45px" src="../../assets/img/Posts/resources/python.svg" alt="python"><img align="left" width="45px" src="../../assets/img/Posts/resources/HTML5_Badge.svg" alt="html"><img align="left" width="45px" src="../../assets/img/Posts/resources/CSS3_logo.svg" alt="css"><img align="left" width="45px" src="../../assets/img/Posts/resources/javascript-1.svg" alt="js"><img align="left" width="45px" src="../../assets/img/Posts/resources/php.svg" alt="php"></div> |
 
-</br>
+<hr>
 
 <!--
 ### CTF's
@@ -104,7 +102,8 @@ Cras neque ex, tincidunt ac dapibus sed, placerat quis ex. Phasellus nibh purus,
 |-----|
 |<div display="flex" align="left" justify-content="space-between" align-items="centre" width="100%"><img align="left" width="55px" src="https://assets.tryhackme.com/img/logo/tryhackme_logo_full.svg" alt="thm"><img align="left" width="60px" src="https://app.hackthebox.eu/images/logos/logo-htb.svg" alt="htb"><img align="left" width="45px" src="https://blueteamlabs.online/images/logo.png" alt="btlo"><img align="left" width="60px" src="https://cybertalents.com/images/logo-footer.png" alt="Cybertalent"><img align="left" width="65px" src="https://www.qbssoftware.com/image/cache/catalog/qbs/burpsuite-250x250.png" alt="portswigger"></div>|
 
-</br>
+<hr>
+
 
 <a href="https://tryhackme.com/p/oste">
   <img align="left" alt="Stephen Kageche | THM" width="45px" src="https://assets.tryhackme.com/img/logo/tryhackme_logo_full.svg" />
