@@ -13,4 +13,4 @@ I am trying to document things as I learn and share it with community, Here you 
 
 If you're interested in contacting me, LinkedIn and Twitter are good avenues or shoot me an email.
 
-<a href="https://www.buymeacoffee.com/ColdFusionX" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="oste" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF5F5F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
