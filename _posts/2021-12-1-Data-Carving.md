@@ -1,3 +1,10 @@
+---
+layout: post
+title: "File Recovery"
+date: 2021-12-1
+image: ../../assets/img/Posts/groovy.jpg
+---
+
 # File Recovery and Data Carving with Foremost, Scalpel, and Bulk Extractor
 
 ## Foremost
