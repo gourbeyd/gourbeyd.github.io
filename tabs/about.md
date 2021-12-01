@@ -16,31 +16,31 @@ You are visitor number <img src="https://profile-counter.glitch.me/05t3/count.sv
 <hr>
 
 <a href="https://twitter.com/oste_ke">
-  <img align="left" alt="Stephen Kageche | Twitter" width="22px" src="https://github.com/05t3/05t3/blob/main/resources/twitter.svg" />
+  <img align="left" alt="Stephen Kageche | Twitter" width="22px" src="../../assets/img/Posts/resources/twitter.svg" />
 </a>
 
 <a href="https://www.reddit.com/user/oste08">
-  <img align="left" alt="Stephen Kageche | Reddit" width="22px" src="https://github.com/05t3/05t3/blob/main/resources/reddit.svg" />
+  <img align="left" alt="Stephen Kageche | Reddit" width="22px" src="../../assets/img/Posts/resources/reddit.svg" />
 </a>
 
 <a href="https://www.linkedin.com/in/stephen-kageche-591193196/">
-  <img align="left" alt="Stephen Kageche | "LinkedIn" width="22px" src="https://github.com/05t3/05t3/blob/main/resources/linkedin.svg" />
+  <img align="left" alt="Stephen Kageche | "LinkedIn" width="22px" src="../../assets/img/Posts/resources/linkedin.svg" />
 </a>
 
 <a href="https://github.com/05t3/05t3">
-  <img align="left" alt="Stephen Kageche | "Github" width="22px" src="https://github.com/05t3/05t3/blob/main/resources/github.svg" />
+  <img align="left" alt="Stephen Kageche | "Github" width="22px" src="../../assets/img/Posts/resources/github.svg" />
 </a>
 
 <a href="https://www.linkedin.com/in/stephen-kageche-591193196/">
-  <img align="left" alt="Stephen Kageche" | "Discord" width="22px" src="https://github.com/05t3/05t3/blob/main/resources/discord.svg" />
+  <img align="left" alt="Stephen Kageche" | "Discord" width="22px" src="../../assets/img/Posts/resources/discord.svg" />
 </a>
 
 <a href="https://open.spotify.com/user/draidskxf4vzsrhv8xef72t8a?si=667fe12d67ca429b">
-  <img align="left" alt="Stephen Kageche" | "Spotify" width="22px" src="https://github.com/05t3/05t3/blob/main/resources/spotify-2.svg" />
+  <img align="left" alt="Stephen Kageche" | "Spotify" width="22px" src="../../assets/img/Posts/resources/spotify-2.svg" />
 </a>
 
 <a href="mailto:stevegeche@gmail.com">
-  <img align="left" alt="Stephen Kageche" width="22px" src="https://github.com/05t3/05t3/blob/main/resources/official-gmail-icon-2020-.svg" />
+  <img align="left" alt="Stephen Kageche" width="22px" src="../../assets/img/Posts/resources/official-gmail-icon-2020-.svg" />
 </a>
 
 <br>
@@ -68,33 +68,33 @@ Cras neque ex, tincidunt ac dapibus sed, placerat quis ex. Phasellus nibh purus,
 
 ### Operating Systems & Virtualisation Software Familiar with
 
-| OS & VM's                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <div display="space-between" width="100px"><img align="left" width="45px" src="https://github.com/05t3/05t3/blob/main/resources/linux.svg" alt="Linux"><img align="left" width="45px" src="https://github.com/05t3/05t3/blob/main/resources/windows.svg" alt="Windows"><img align="left" width="45px" src="https://github.com/05t3/05t3/blob/main/resources/docker.svg" alt="Docker"><img align="left" width="45px" src="https://github.com/05t3/05t3/blob/main/resources/vmware%20(1).svg" alt="VMware"><img align="left" width="45px" src="https://github.com/05t3/05t3/blob/main/resources/virtualbox-icon.svg" alt="VirtualBox"> |
+| OS & VM's                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div display="space-between" width="100px"><img align="left" width="45px" src="../../assets/img/Posts/resources/linux.svg" alt="Linux"><img align="left" width="45px" src="../../assets/img/Posts/resources/windows.svg" alt="Windows"><img align="left" width="45px" src="../../assets/img/Posts/resources/docker.svg" alt="Docker"><img align="left" width="45px" src="../../assets/img/Posts/resources/vmware%20(1).svg" alt="VMware"><img align="left" width="45px" src="../../assets/img/Posts/resources/virtualbox-icon.svg" alt="VirtualBox"> |
 
 </br>
 
 ### Web Server's & CMS Familiar with
 
-| Databases                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div display="flex" align="left" justify-content="space-between" align-items="centre" width="100%"><img align="left" width="45px" src="https://github.com/05t3/05t3/blob/main/resources/apache-13.svg" alt="Apache"><img align="left" width="65px" src="https://github.com/05t3/05t3/blob/main/resources/nginx-1.svg" alt="nginx"><img align="left" width="45px" src="https://github.com/05t3/05t3/blob/main/resources/wordpress-blue.svg" alt="wordpress"><img align="left" width="45px" src="https://github.com/05t3/05t3/blob/main/resources/joomla.svg" alt="joomla"></div> |
+| Databases                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div display="flex" align="left" justify-content="space-between" align-items="centre" width="100%"><img align="left" width="45px" src="../../assets/img/Posts/resources/apache-13.svg" alt="Apache"><img align="left" width="65px" src="../../assets/img/Posts/resources/nginx-1.svg" alt="nginx"><img align="left" width="45px" src="../../assets/img/Posts/resources/wordpress-blue.svg" alt="wordpress"><img align="left" width="45px" src="../../assets/img/Posts/resources/joomla.svg" alt="joomla"></div> |
 
 </br>
 
 ### Coding Arsenal
 
-| IDE's and Tools                                                                                                                                                                                                                                                                                                                                                                                                          |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <div display="space-between" width="100%"><img width="45px" align="right" src="https://github.com/05t3/05t3/blob/main/resources/Vimlogo.svg" alt="Vim"><img width="45px" align="right" src="https://github.com/05t3/05t3/blob/main/resources/Visual_Studio_Code_1.35_icon.svg" alt="Vscode"><img width="45px" align="right" src="https://github.com/05t3/05t3/blob/main/resources/sublime-text.svg" alt="Sublime"></div> |
+| IDE's and Tools                                                                                                                                                                                                                                                                                                                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <div display="space-between" width="100%"><img width="45px" align="right" src="../../assets/img/Posts/resources/Vimlogo.svg" alt="Vim"><img width="45px" align="right" src="../../assets/img/Posts/resources/Visual_Studio_Code_1.35_icon.svg" alt="Vscode"><img width="45px" align="right" src="../../assets/img/Posts/resources/sublime-text.svg" alt="Sublime"></div> |
 
 </br>
 
 ### Programming & Scripting
 
-| Databases                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <div display="flex" align="left" justify-content="space-between" align-items="centre" width="100%"><img align="left" width="45px" src="https://github.com/05t3/05t3/blob/main/resources/python.svg" alt="python"><img align="left" width="45px" src="https://github.com/05t3/05t3/blob/main/resources/HTML5_Badge.svg" alt="html"><img align="left" width="45px" src="https://github.com/05t3/05t3/blob/main/resources/CSS3_logo.svg" alt="css"><img align="left" width="45px" src="https://github.com/05t3/05t3/blob/main/resources/javascript-1.svg" alt="js"><img align="left" width="45px" src="https://github.com/05t3/05t3/blob/main/resources/php.svg" alt="php"></div> |
+| Databases                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div display="flex" align="left" justify-content="space-between" align-items="centre" width="100%"><img align="left" width="45px" src="../../assets/img/Posts/resources/python.svg" alt="python"><img align="left" width="45px" src="../../assets/img/Posts/resources/HTML5_Badge.svg" alt="html"><img align="left" width="45px" src="../../assets/img/Posts/resources/CSS3_logo.svg" alt="css"><img align="left" width="45px" src="../../assets/img/Posts/resources/javascript-1.svg" alt="js"><img align="left" width="45px" src="../../assets/img/Posts/resources/php.svg" alt="php"></div> |
 
 </br>
 
