@@ -15,7 +15,7 @@ You are visitor number <img src="https://profile-counter.glitch.me/05t3/count.sv
 
 <hr>
 
-<a href="https://twitter.com/oste_ke">
+<!-- <a href="https://twitter.com/oste_ke">
   <img align="left" alt="Stephen Kageche | Twitter" width="22px" src="../../assets/img/Posts/resources/twitter.svg" />
 </a>
 
@@ -44,7 +44,7 @@ You are visitor number <img src="https://profile-counter.glitch.me/05t3/count.sv
 </a>
 
 <br>
-<hr>
+<hr> -->
 
 <!--
 <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
@@ -64,7 +64,7 @@ Cras neque ex, tincidunt ac dapibus sed, placerat quis ex. Phasellus nibh purus,
   
 <hr>
 
-# Operating Systems & Virtualisation Software Familiar with
+<!-- # Operating Systems & Virtualisation Software Familiar with
 
 | OS & VM's                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -128,7 +128,7 @@ Cras neque ex, tincidunt ac dapibus sed, placerat quis ex. Phasellus nibh purus,
 Here are some ideas to get you started:
 - 👯 I’m looking to collaborate on ...
 - 💬 Ask me about ...
--->
+--> -->
 
 - 🐳 I’m currently working on Docker and Docker Security
 - 🐞 I’m currently learning Malware Analysis
