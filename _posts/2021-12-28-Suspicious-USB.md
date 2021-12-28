@@ -3,7 +3,7 @@ layout: post
 title: "Suspicious USB"
 date: 2021-12-28
 image: ../../assets/img/Posts/suspicious-usb.png
-categories: [BTLO, Digital Forensics, Medium]
+categories: [BTLO, Digital Forensics]
 tags:
   [
     autorun.inf,
@@ -21,6 +21,7 @@ tags:
 Today we will be tackling a task from BTLO called Suspicious USB. At the time of writing, the challenge is retired. This was fun tackling and and researching new stuff that i was well acquinted with.
 
 > **Scenario**
+
 > _One of our clients informed us they recently suffered an employee data breach. As a startup company, they had a constrained budget allocated for security and employee training. I visited them and spoke with the relevant stakeholders. I also collected some suspicious emails and a USB drive an employee found on their premises. While I am analyzing the suspicious emails, can you check the contents on the USB drive?_
 
 ---
@@ -32,6 +33,7 @@ Lets first take a moment to know what autorun.inf is. Shall we? I did some rease
 An autorun.inf file is a text file that can be used by the AutoRun and AutoPlay components of Microsoft Windows operating systems. For the file to be discovered and used by these component, it must be located in the root directory of a volume.
 
 > _*Quick History*_
+
 > Wayback in Windows 95, the AutoRun component was introduced. AutoRun enabled application CD-ROMs to automatically launch a program which could then guide the user through the installation process. By placing settings in an autorun.inf file, manufacturers could decide what actions were taken when their CD-ROM was inserted. The simplest autorun.inf files have just two settings: one specifying an icon to represent the CD in Windows Explorer (or "My Computer") and one specifying which application to run.if you want to learn more about AutoPlay device types, feel free to read more [here](https://en.wikipedia.org/wiki/AutoPlay#Device_types)
 
 Well, TL;DR?
