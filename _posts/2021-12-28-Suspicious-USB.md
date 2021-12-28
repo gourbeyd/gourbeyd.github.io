@@ -32,8 +32,7 @@ Lets first take a moment to know what autorun.inf is. Shall we? I did some rease
 
 An autorun.inf file is a text file that can be used by the AutoRun and AutoPlay components of Microsoft Windows operating systems. For the file to be discovered and used by these component, it must be located in the root directory of a volume.
 
-> _*Quick History*_
-
+> _Quick History_
 > Wayback in Windows 95, the AutoRun component was introduced. AutoRun enabled application CD-ROMs to automatically launch a program which could then guide the user through the installation process. By placing settings in an autorun.inf file, manufacturers could decide what actions were taken when their CD-ROM was inserted. The simplest autorun.inf files have just two settings: one specifying an icon to represent the CD in Windows Explorer (or "My Computer") and one specifying which application to run.if you want to learn more about AutoPlay device types, feel free to read more [here](https://en.wikipedia.org/wiki/AutoPlay#Device_types)
 
 Well, TL;DR?
