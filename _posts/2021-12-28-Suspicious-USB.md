@@ -20,7 +20,10 @@ tags:
 
 Today we will be tackling a task from BTLO called Suspicious USB. At the time of writing, the challenge is retired. This was fun tackling and and researching new stuff that i was well acquinted with.
 
-> **Scenario** > _One of our clients informed us they recently suffered an employee data breach. As a startup company, they had a constrained budget allocated for security and employee training. I visited them and spoke with the relevant stakeholders. I also collected some suspicious emails and a USB drive an employee found on their premises. While I am analyzing the suspicious emails, can you check the contents on the USB drive?_
+> **Scenario**
+> _One of our clients informed us they recently suffered an employee data breach. As a startup company, they had a constrained budget allocated for security and employee training. I visited them and spoke with the relevant stakeholders. I also collected some suspicious emails and a USB drive an employee found on their premises. While I am analyzing the suspicious emails, can you check the contents on the USB drive?_
+
+---
 
 #### What file is the autorun.inf running? (3 points)
 
@@ -85,6 +88,8 @@ More keys can be found [here](https://en.wikipedia.org/wiki/Autorun.inf). From t
 
 `README.pdf`
 
+---
+
 #### Does the pdf file pass virustotal scan? (No malicious results returned) (2 points)
 
 Here is how i went about scoring this correctly. I first took the sha256sum of the `.pdf` file and looked it up on virustotal. [Here](https://www.virustotal.com/gui/file/c868cd6ae39dc3ebbc225c5f8dc86e3b01097aa4b0076eac7960256038e60b43) is what i got.(_You can also upload the pdf file directly_)
@@ -97,6 +102,8 @@ c868cd6ae39dc3ebbc225c5f8dc86e3b01097aa4b0076eac7960256038e60b43  README.pdf
 ![image](https://user-images.githubusercontent.com/58165365/147153373-d87badbe-eda5-4c96-8ff0-9184ce9ebaa4.png)
 
 `False`
+
+---
 
 #### Does the file have the correct magic number? (2 points)
 
@@ -141,11 +148,15 @@ Lets break down the flags used in the command above:
 
 `True`
 
+---
+
 #### What OS type can the file exploit? (Linux, MacOS, Windows, etc) (5 points)
 
 Autorun runs on Windows, so this was preety straight forward.
 
 `Windows`
+
+---
 
 #### A Windows executable is mentioned in the pdf file, what is it? (3 points)
 
@@ -253,6 +264,8 @@ Where:
 - `/Launch` - _counts launch actions._
 
 `cmd.exe`
+
+---
 
 #### How many suspicious /OpenAction elements does the file have? (5 points)
 
