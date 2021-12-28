@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Network Analysis – Malware Compromise"
+title: "Network Analysis – Ransomware"
 date: 2021-12-28
 image: ![image](https://user-images.githubusercontent.com/58165365/147261135-0b76fd00-2269-41ea-ab16-f0c6b9273720.png)
 categories: [BTLO, Security Operations]
