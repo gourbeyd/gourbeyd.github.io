@@ -2,7 +2,7 @@
 layout: post
 title: "Network Analysis – Ransomware"
 date: 2021-12-29
-image: ![image](https://user-images.githubusercontent.com/58165365/147261135-0b76fd00-2269-41ea-ab16-f0c6b9273720.png)
+image: (https://user-images.githubusercontent.com/58165365/147261135-0b76fd00-2269-41ea-ab16-f0c6b9273720.png)
 categories: [BTLO, Security Operations]
 tags: [dridex, wireshark, malware, ransomware]
 ---
@@ -83,7 +83,7 @@ I filtered dns traffic then manually inspected the DNS query's
 
 #### Decrypt the Tender document and submit the flag (3 points)
 
-I did some digging and found a command line tool that can decrypt files encrypted by the ransomware. You can download it at [Mcafee](https://www.mcafee.com/enterprise/en-in/downloads/free-tools/tesladecrypt.html). Instructions on how to use the tool can be found [here]https://www.mcafee.com/enterprise/en-in/downloads/free-tools/how-to-use-tesladecrypt.html. Decrypting was relatively easy and opening the document, we get the flag.
+I did some digging and found a command line tool that can decrypt files encrypted by the ransomware. You can download it at [Mcafee](https://www.mcafee.com/enterprise/en-in/downloads/free-tools/tesladecrypt.html). Instructions on how to use the tool can be found [here](https://www.mcafee.com/enterprise/en-in/downloads/free-tools/how-to-use-tesladecrypt.html). Decrypting was relatively easy and opening the document, we get the flag.
 
 ```
 $ ./tesladecrypt.exe -h
