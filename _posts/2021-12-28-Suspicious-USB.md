@@ -2,7 +2,7 @@
 layout: post
 title: "Suspicious USB"
 date: 2021-12-28
-image: ../../assets/img/Posts/Road.png
+image: ../../assets/img/Posts/suspicious-usb.png
 categories: [BTLO, Digital Forensics, Medium]
 tags:
   [
