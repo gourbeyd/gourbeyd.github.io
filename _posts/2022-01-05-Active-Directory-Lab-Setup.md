@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Active Directory Lab Setup - (Mayor's Movement, Pivoting & Persistence Course Walkthrough"
+title: "Active Directory Lab Setup - (Mayor's Movement, Pivoting & Persistence Course Walkthrough)"
 date: 2021-01-05
 image: ../../assets/img/Posts/AD1.png
 categories: [Active Directory, MPP Course]
@@ -75,31 +75,33 @@ Choose the drive and hit _Next_
 
 ![image](https://user-images.githubusercontent.com/58165365/148054778-d6278f2f-09bb-4916-a55f-a4e06ab20e1d.png)
 
-After this step, the installation process begins. Once complete, you will be prompted to input the Administrators password. In this case and for lab purpose, we are gonna setup a "really secure passoword" of `Password123!` and hit next. Once you login, you will be welcomed by the Server Manager Dashboard.
-
-![image](https://user-images.githubusercontent.com/58165365/148185241-791c27b9-9b10-4454-a982-a2f47b32b6e3.png)
-
-Upto this point, i think we are good to go. Lets proceed to Setup our windows 10.
-
-Choose your region.
+After this step, the installation process begins. Once complete, you will be prompted to input the Administrators password. In this case and for lab purpose, we are gonna setup a "really secure passoword" of `Password123!` and hit next.
 
 ![image](https://user-images.githubusercontent.com/58165365/148060277-c559c6eb-aeb1-4d2b-b4e1-b080b5687a72.png)
 
-Select the keyboard layout that suits you.
+Once you login, you will be welcomed by the Server Manager Dashboard.
+
+![image](https://user-images.githubusercontent.com/58165365/148185241-791c27b9-9b10-4454-a982-a2f47b32b6e3.png)
+
+Upto this point, i think we are good to go. Lets proceed to Setup our Windows 10 Workstations.
+
+Choose your region.
 
 ![image](https://user-images.githubusercontent.com/58165365/148071261-fbb8d428-4898-478b-a567-53ba54c83d29.png)
 
-For this lab setup, we'll go with _Set up for personal use_
+Select the keyboard layout that suits you.
 
 ![image](https://user-images.githubusercontent.com/58165365/148071349-fc7c38ae-b04f-45ee-9aa5-237c49a80b7c.png)
 
-You will be promted to add your account. In the bottom left corner, choose an offline account.
+For this lab setup, we'll go with _Set up for personal use_
 
 ![image](https://user-images.githubusercontent.com/58165365/148072978-8c2394e6-c2b9-4c6d-bccf-3f7a218db9b2.png)
 
-For now, we'll go with limited experience
+You will be promted to add your account. In the bottom left corner, choose an offline account.
 
 ![image](https://user-images.githubusercontent.com/58165365/148073162-2924e29d-a97d-46e7-be58-41cd569b4d1e.png)
+
+For now, we'll go with limited experience
 
 ![image](https://user-images.githubusercontent.com/58165365/148073238-c7cbfd68-c3a5-42f9-bbe5-836a10e54a31.png)
 
@@ -112,15 +114,23 @@ Enter a password.
 ![image](https://user-images.githubusercontent.com/58165365/148073940-27919e5e-86e5-41fe-b667-4a3fbcd4a039.png)
 
 Creds:
-||||
-|----------|-----------|-----------|
-|Workstation|Username|Password|
-|1|a.bernard|ne.11.88|
-|2|k.malone|don@ts01|
+
+| Workstation | Username   | Password     |
+| ----------- | ---------- | ------------ |
+| 1           | s.chisholm | FallOutBoy1! |
+| 2           | m.seitz    | Phi11i35@44  |
+
+The next step, you need to choose three security questions, so go ahead and do that.
 
 ![image](https://user-images.githubusercontent.com/58165365/148074408-4f67c512-f546-4694-8dbc-95faf03b5d7a.png)
 
+For privacy settings, we can go ahead and disable all as we don't really require them.
+
 ![image](https://user-images.githubusercontent.com/58165365/148074533-b54e1a96-0b88-4cc0-bc93-b3f24393115d.png)
+
+And with that done...both workstations should take a moment to load and start.
+
+We also need to ensure that both workstations and the server have the same time settings. To do so, we can head over to `Settings> Time & Language` and ensure that you change the `Time zone` to match your current region.
 
 ![image](https://user-images.githubusercontent.com/58165365/148100372-1fb87fd3-9b39-461a-b847-d70a10da80eb.png)
 
@@ -140,9 +150,13 @@ Once done, click ok and the snapshot will be taken in a few minutes.
 
 ![image](https://user-images.githubusercontent.com/58165365/148186295-ffcea020-62fa-4cdb-833b-3774229ac361.png)
 
-You can download the scripts from this github repo: [dievus/ADGenerator](https://github.com/dievus/ADGenerator) and follow along.
+For the purpose of this course, rather than manually setting up the Domain Controller, we can use a set of Powershell scripts by [TheMayor/Joe Helle](https://twitter.com/joehelle) which will create a vulnerable environment for us to pentest and learn a few concepts which i will be covering in te next series of blogs. You can download the scripts from this github repo: [dievus/ADGenerator](https://github.com/dievus/ADGenerator) and follow along.
 
-```Powershell
+The first script we need to execute is `Invoke-ForestDeploy.ps1`
+
+> This will install the Windows Active Directory Domain Services toolset and generate the actual domain. Follow the instructions on screen, making note of the domain name used as this will be needed later. The scripts are hardcoded for `mayorsec.local` , and any deviation from that domain name will likely break the `ADGenerator.ps1` functionality.
+
+```powershell
 PS C:\Users\Administrator\Desktop\ADGenerator-main> dir
 
 
@@ -227,18 +241,30 @@ RebootRequired : False
 Status         : Success
 
 
-
 Restart the controller if not instructed.
 
 ```
 
-Once the Server restarts, you will notice that we are already in a domain called `mayorsec`
+Don't mind the warning messages. Once the Server restarts, you will notice that we are already in a domain called `mayorsec`
 
 ![image](https://user-images.githubusercontent.com/58165365/148214166-06590ba7-997b-4658-b893-65e7fec31d9d.png)
 
 The next step is running the ADGenerator Script. Like we did in the previous step, you need to set the execution policy to unrestricted and invoke the ADGenerator script and run it with DomainName set to `mayorsec.local`.
 
-```Powershell
+But before executing the script, i browsed it to see what it does. Here are some of the stuff it does needed for the actual course.
+
+- Group generation - Senior Management, IT Admins, Engineering, Sales
+- Domain Information
+- Renaming the domain controller to DC01
+- Creates a new share called `Shared`
+- Creates and adds users to groups
+- Allow WinRM TCP 5985 To Domain Joined Systems
+- Configuring GPO policies to enable PowerShell remoting on hosts.
+- Creating ACL misconfigurations, Kerberoastable service, Administrative privilege delegation and modifying ASREP settings
+
+Lets get into it
+
+```powershell
 PS C:\Users\Administrator\Desktop\ADGenerator-main> dir
 
 
@@ -267,7 +293,7 @@ Security warning
 Run only scripts that you trust. While scripts from the internet can be useful, this script can potentially harm your computer. If you trust this script, use the Unblock-File cmdlet to allow the script to run without this warning
 message. Do you want to run C:\Users\Administrator\Desktop\ADGenerator-main\ADGenerator.ps1?
 [D] Do not run  [R] Run once  [S] Suspend  [?] Help (default is "D"): R
-PS C:\Users\Administrator\Desktop\ADGenerator-main> Invoke-ADGenerator -DomainName theoffice.local
+PS C:\Users\Administrator\Desktop\ADGenerator-main> Invoke-ADGenerator -DomainName mayorsec.local
 
             ___    ____     ______                           __
            /   |  / __ \   / ____/__  ____  ___  _________ _/ /_____  _____
@@ -537,7 +563,9 @@ Description      :
 
 # Resources
 
-- [VirtualBox]() / [Vmware]()
+- [VirtualBox](https://www.virtualbox.org/wiki/Downloads) / [Vmware](https://www.vmware.com/products/workstation-player.html)
 - [VirtualBox Guest Additions]()
 - [Windows Server 2019](https://www.microsoft.com/en-US/evalcenter/evaluate-windows-server-2019?filetype=ISO)
 - [Windows 10](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise)
+- [dievus/ADGenerator](https://github.com/dievus/ADGenerator)
+- [Movement, Pivoting, and Persistence for Pentesters and Ethical Hackers Course](https://www.udemy.com/course/movement-pivoting-and-persistence/?referralCode=99A09396FE1258FC3A2A) by - [Joe Helle](https://twitter.com/joehelle)
