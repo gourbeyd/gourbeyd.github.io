@@ -561,6 +561,115 @@ Description      :
 
 ![image](https://user-images.githubusercontent.com/58165365/148123745-7a8f3fae-cf53-44b5-9403-3af589ff9da3.png)
 
+# Joining Domains
+
+Starting with the DC, since its on the `Secure Network`, we can give it a static ip of `192.168.40.50`. To do this, we need to go to `Control Panel > Network and Internet > Network and Sharing Center`
+
+Head over to `Setting > Accounts > Access work or school` and click on connect
+
+![image](https://user-images.githubusercontent.com/58165365/148374492-9b503c7c-d6ff-44a2-9ab0-b412e7d7d5cf.png)
+
+In our scenario, we want to join a local Active Directory Domain
+
+![image](https://user-images.githubusercontent.com/58165365/148375003-ddd78211-e4ae-42b7-a1dd-462eb016c76d.png)
+
+Add the domain to join (mayorsec.local)
+
+![image](https://user-images.githubusercontent.com/58165365/148375182-e505a4f9-aa93-4f7f-9153-99e251b86ef8.png)
+
+You will be promted to input a user and their password.
+
+![image](https://user-images.githubusercontent.com/58165365/148381911-c6d487c8-8240-4043-bdbb-a258ed6899e1.png)
+
+Make sure you choose Administrator
+
+![image](https://user-images.githubusercontent.com/58165365/148382225-b87070d2-94a5-4592-8d97-db3e4756cfc7.png)
+
+Once the machine reboots, you'll notice we are now part of the domain.
+
+![image](https://user-images.githubusercontent.com/58165365/148383110-72a34419-4cef-4f60-aaf0-8c1bbf753f9f.png)
+
+Repeat this procedure with Workstation2.
+
+If we now go back to our server , launch server manager and on the top right corner, click Tools and select `Active Directory Users and Computers`
+
+![image](https://user-images.githubusercontent.com/58165365/148431487-109a5d94-bfb0-4de8-ac9f-9746ef12b3c4.png)
+
+If we click on the Computers tab, we should be able to find both machines listed.
+
+![image](https://user-images.githubusercontent.com/58165365/148431143-78bf8e86-442e-4838-87c1-0b01e84c380e.png)
+
+This names make it hard to identify a specific computer. We can go ahead an use a script called nameGen to automatically rename the PC's. This has to be executed on both machines though. Here is how you would go about it.
+
+![image](https://user-images.githubusercontent.com/58165365/148440380-f00bef6e-3b49-4970-8290-a538fa2ab502.png)
+
+We find 3 folders. We are particularly interested in `Shared`
+
+![image](https://user-images.githubusercontent.com/58165365/148432723-ac9099fb-12a9-442b-b813-0114b9decf45.png)
+
+If we navigate further, we can get the script and drag it to our desktop
+
+![image](https://user-images.githubusercontent.com/58165365/148433670-7eb080f8-64dd-496b-b687-4ed5a3c9b339.png)
+
+```powershell
+PS C:\Users\s.chisholm.mayorsec\Desktop> dir
+
+
+    Directory: C:\Users\s.chisholm.mayorsec\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         9/23/2021   1:06 PM            951 nameGen.ps1
+
+
+PS C:\Users\s.chisholm.mayorsec\Desktop> Set-ExecutionPolicy Unrestricted
+
+Execution Policy Change
+The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at
+https:/go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): Y
+PS C:\Users\s.chisholm.mayorsec\Desktop> . .\nameGen.ps1
+PS C:\Users\s.chisholm.mayorsec\Desktop> executeScript -ComputerName WORKSTATION-02
+WARNING: The changes will take effect after you restart the computer DESKTOP-C4EGH78.
+
+
+    Directory: C:\
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          1/6/2022  10:55 AM                Shared
+AvailabilityType      : NonClustered
+CachingMode           : Manual
+CATimeout             : 0
+ConcurrentUserLimit   : 0
+ContinuouslyAvailable : False
+CurrentUsers          : 0
+Description           :
+EncryptData           : False
+FolderEnumerationMode : Unrestricted
+IdentityRemoting      : False
+Infrastructure        : False
+LeasingMode           : Full
+Name                  : Shared
+Path                  : C:\Shared
+Scoped                : False
+ScopeName             : *
+SecurityDescriptor    : O:SYG:SYD:(A;;FA;;;BU)
+ShadowCopy            : False
+ShareState            : Online
+ShareType             : FileSystemDirectory
+SmbInstance           : Default
+Special               : False
+Temporary             : False
+Volume                : \\?\Volume{dc62328a-0000-0000-0000-300300000000}\
+PSComputerName        :
+PresetPathAcl         : System.Security.AccessControl.DirectorySecurity
+```
+
+![image](https://user-images.githubusercontent.com/58165365/148446404-14be4b45-dcce-4e3e-be3c-2fe9b6f6b336.png)
+
 # Resources
 
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads) / [Vmware](https://www.vmware.com/products/workstation-player.html)
