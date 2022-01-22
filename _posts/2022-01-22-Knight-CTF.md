@@ -7,9 +7,29 @@ categories: [CTF-TIME]
 tags: [wireshark, osint, rev, steg]
 ---
 
+Hey there. I'm glad you are here. Here is a writeup of the challenges i managed to solve in the first **Knight CTF** - an online jeopardy style Capture the Flag (CTF) competition hosted by the Knight Squad community from Bangladesh.
+
+| CTF            | KnightCTF                                            |
+| -------------- | ---------------------------------------------------- |
+| CTF Start Time | 20 January 2022 09:00PM GMT +6                       |
+| CTF End Time   | 21 January 2022 11:59PM GMT +6                       |
+| CTF Time Event | [link](https://ctftime.org/event/1545/)              |
+| Team           | Fr334aks-Mini                                        |
+| Players        | 05t3, Winter, ★sW33t_1mPur1t13s, rs_on3, n3rd, Parsz |
+
+We managed pos 120💪🏼out of 752 teams with 2750 points.
+
+![image](https://user-images.githubusercontent.com/58165365/150654367-bbd59f1b-0188-4cc5-a2af-1ad6d5e53677.png)
+
+Enough with the small talk...Let geet started.
+
+---
+
 # Networking
 
 ## How's the Shark?
+
+Find the flag from the following. [Download Link](https://kctf2022.nstechvalley.com/knight-ctf-2022-challenges/Network/How's%20the%20Shark/data.pcapng)
 
 Whenever i get a pcap file for analysis, the first thing i do is analyze the protocal hierarchy statistics to see what protocols have been used frequently. In this case, HTTP protocol is a good place to start since traffic is mostly unencrypted. We see that we have some `png` files that we'd be interested in analyzing.
 
@@ -25,13 +45,13 @@ Out of the 18 exported images, we can easily get out first flag. This was easy, 
 
 ![image](https://user-images.githubusercontent.com/58165365/150390229-4b26b973-ff8c-4fce-a6c1-07b5eb6bc11c.png)
 
-`KCTF{A_ShARk_iN_tHe_WirE}`
+FLAG: `KCTF{A_ShARk_iN_tHe_WirE}`
 
 ## Find the Flag
 
 _Find the flag from the following file._
 
-Ok, so this challenge was also reatively easy to solve, I used the `strings` command to print out any NUL-terminated sequence of atlest 20 characters. (By default, its 4 characters).
+Ok, so this challenge was also relatively easy to solve, I used the `strings` command to print out any NUL-terminated sequence of atlest 20 characters. (By default, its 4 characters).
 
 ```bash
 ➜  file file
@@ -68,7 +88,11 @@ _I created a CTF platform of my own & hosted on a server. It seems like someone 
 
 _What is the username & password that the attacker got._
 
-Awesome, so like in the previous pcap file, we start by analyzing the Protocal Hierarchy Statistics. `MySQL's` malformed packets sure sounds interesting...Could this be an indicator of sql injection attempts? Lets start by filtering out MySQL packets
+Awesome, so like in the previous pcap file, we start by analyzing the Protocal Hierarchy Statistics.
+
+![image](https://user-images.githubusercontent.com/58165365/150653735-f1736b7e-638b-40ef-8338-0b15bf530599.png)
+
+`MySQL's` malformed packets sure sounds interesting...Could this be an indicator of sql injection attempts? Lets start by filtering out MySQL packets
 
 ![image](https://user-images.githubusercontent.com/58165365/150645654-07900589-f3ed-45c3-ae21-dceaac7a1430.png)
 
@@ -81,7 +105,7 @@ So yeah, we have a huge number of packets originating from this two Ip's. Cool..
 ![image](https://user-images.githubusercontent.com/58165365/150648327-730c6481-b47c-4af2-b949-0f91c9a2749c.png)
 
 After sometime of inpecting the objects, the login pages seem interesting.
-The other `login.php` packets had the following username's and passwords, meaning that he tried to login using default credentials.
+The first four `login.php` packets had the following username's and passwords, meaning that he tried to login using default credentials.
 
 ```
 admin_admin123
@@ -94,7 +118,7 @@ Looking at the traffic, we see a POST request with the username and password. Th
 
 ![image](https://user-images.githubusercontent.com/58165365/150648251-8e1fdcde-5adc-421d-adfc-7253aeb6521c.png)
 
-`KCTF{demo_demo}`
+FLAG: `KCTF{demo_demo}`
 
 ## Hashed Password
 
@@ -110,7 +134,7 @@ Opening the files with a text editor and inspecting the code will give you preet
 
 ![image](https://user-images.githubusercontent.com/58165365/150652584-eeb11ff5-b1b8-4e45-a875-eb7b415e320d.png)
 
-`KCTF{TAREQ : $2Y$10$XVKEZO/NKM4KE073CPTEG.VKFTHMH1CCDPRDD5JWYWKFEZ6GZKZN}`
+FLAG: `KCTF{TAREQ : $2Y$10$XVKEZO/NKM4KE073CPTEG.VKFTHMH1CCDPRDD5JWYWKFEZ6GZKZN}`
 
 ## Attacker
 
@@ -120,7 +144,7 @@ _What is the attacker name?_
 
 ![image](https://user-images.githubusercontent.com/58165365/150480547-4f35fdeb-1ebf-48c7-904a-04f706825bd9.png)
 
-`KCTF{MOSH}`
+FLAG: `KCTF{MOSH}`
 
 ## PHP Version
 
@@ -132,7 +156,7 @@ From `about`, the server spit the version of webserver and php being used
 
 ![image](https://user-images.githubusercontent.com/58165365/150480947-869c43b5-ce74-4ed9-97f7-a7afc0cbb6ff.png)
 
-`KCTF{PHP/7.4.27}`
+FLAG: `KCTF{PHP/7.4.27}`
 
 ## Vuln Columns
 
@@ -144,7 +168,7 @@ Well, i'm no web expert but i kept seeing the value 4 in most of the payloads he
 
 ![image](https://user-images.githubusercontent.com/58165365/150649787-7fcea993-c917-4db8-9c02-1f49ce81d354.png)
 
-`KCTF{4}`
+FLAG: `KCTF{4}`
 
 ## Database Flag
 
@@ -162,11 +186,11 @@ Using [Cyberchef](https://gchq.github.io/CyberChef/), we can decode the string a
 
 ![image](https://user-images.githubusercontent.com/58165365/150652624-03230a44-7bd0-4b02-872e-ed772f55b34b.png)
 
-`KCTF{SqL_1Nj3C7i0n}`
+FLAG: `KCTF{SqL_1Nj3C7i0n}`
 
 ## KCTF
 
-\_It's all about kctf.\_\_
+_It's all about kctf._
 
 > Use Compromised CTF Platform's Challenge file to analyze.
 
@@ -174,7 +198,7 @@ Looking at the exported images, we get the final flag.
 
 ![image](https://user-images.githubusercontent.com/58165365/150396670-49ad518c-487f-43fb-a4fa-652e8cefda99.png)
 
-`KCTF{Ev3rY_UsEr_1nPuT_SH0uLD_B3_S4niT1z3D}`
+FLAG: `KCTF{Ev3rY_UsEr_1nPuT_SH0uLD_B3_S4niT1z3D}`
 
 # Forensics
 
@@ -205,8 +229,8 @@ I tried various steg tools to see if there might have been some hidden file inni
 
 `stegoveritas -imageTransform -extractLSB Lost\ Flag\ .png`
 
-- -imageTransform - Perform various image transformations on the input image and save them to the output directory
-- -extractLSB - Extract a specific LSB RGB from the image. Use with -red, -green, -blue, and -alpha
+- `imageTransform` - Perform various image transformations on the input image and save them to the output directory
+- `extractLSB` - Extract a specific LSB RGB from the image. Use with -red, -green, -blue, and -alpha
 
 After running the command above, we should an output folder with several transformations of the image.
 
@@ -216,7 +240,7 @@ If you start looking at them one by one, you get the hidden flag.
 
 ![image](https://user-images.githubusercontent.com/58165365/150417625-ec411772-f579-4d4d-bc39-df35e8370a31.png)
 
-`KCTF{Y0U_F0uNd_M3}`
+FLAG: `KCTF{Y0U_F0uNd_M3}`
 
 ## Compromised FTP
 
@@ -246,7 +270,7 @@ ftp.log                                             100%[=======================
 Mon Jan  3 15:24:13 2022 [pid 5399] [ftpuser] OK LOGIN: Client "::ffff:192.168.1.7"
 ```
 
-`KCTF{ftpuser_192.168.1.7}`
+FLAG: `KCTF{ftpuser_192.168.1.7}`
 
 # OSINT
 
@@ -272,7 +296,9 @@ We now have some solid stuff, with this in mind, we can head over to google maps
 
 [Google Map Location](https://www.google.com/maps/place/Ministerio+de+Transportes,+Movilidad+y+Agenda+Urbana/@40.4442164,-3.695797,17z/data=!3m1!4b1!4m12!1m6!3m5!1s0xd4228faa4f3ceff:0x45144593d64bd75f!2sMinisterio+de+Transportes,+Movilidad+y+Agenda+Urbana!8m2!3d40.4442164!4d-3.6936083!3m4!1s0xd4228faa4f3ceff:0x45144593d64bd75f!8m2!3d40.4442164!4d-3.6936083)
 
-`KCTF{40.4442164,-3.695797}`
+![image](https://user-images.githubusercontent.com/58165365/150653876-af22d2e1-1575-4198-9388-2f2d599cac13.png)
+
+FLAG: `KCTF{40.4442164,-3.695797}`
 
 # Steg
 
@@ -295,7 +321,7 @@ StegSeek 0.6 - https://github.com/RickdeJager/StegSeek
 KCTF{Do_We_Remember_Cicada_3301}#
 ```
 
-`KCTF{Do_We_Remember_Cicada_3301}`
+FLAG: `KCTF{Do_We_Remember_Cicada_3301}`
 
 <!-- # Misc
 
@@ -322,11 +348,16 @@ So, did a quick installation and launched it. Looking at the different classes, 
 
 ![image](https://user-images.githubusercontent.com/58165365/150553705-73c45da5-6dee-4ee3-9bd2-653d8b6f8e52.png)
 
-Drilling down on constants, i found two classes, so the strings class had a String
+Drilling down on constants, i found two classes whereby the strings class had a String called `String _0xflag` containing a base64 string. (*I'm not even sure i used the correct programmatic expression explaining this but.....you feel me, right?*😂😂)
+
 ![image](https://user-images.githubusercontent.com/58165365/150553584-c5283d43-9f11-44ce-80ec-1dd8a6d8be77.png)
+
+You can proceed to decode this with Cyberchef or the cli and get the flag
 
 ![image](https://user-images.githubusercontent.com/58165365/150553834-27eae156-0a55-4d27-a28b-d3775a9cf4e9.png)
 
-`KCTF{7H15_W@5_345Y_R16H7?}`
+FLAG: `KCTF{7H15_W@5_345Y_R16H7?}`
 
-![[Pasted image 20220121180506.png]]
+---
+
+That brings me to the end of this writeup and thanks for reading through.😃 I'd be interested to see how you solved the same challenges. Feel free to reach out to me on Twitter [**@oste_ke**](https://twitter.com/oste_ke)
