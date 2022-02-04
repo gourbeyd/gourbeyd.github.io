@@ -25,7 +25,7 @@ If you choose to vitualize your Ubuntu server on VirtualBox or Vmware:
 
 - [Download Ubuntu Server 20.04 LTS](https://ubuntu.com/download/server)
 - [VirtualBox 6.1.32](https://www.virtualbox.org/wiki/Downloads) / [VMware Workstation Player](https://www.vmware.com/products/workstation-player.html)
-- Follow this awesome walkthrough by [Ubuntu](https://docs.github.com/en/get-started/quickstart/hello-world) to get started. Once done, feel free to jump to this [section]().
+- Follow this awesome walkthrough by [Ubuntu](https://docs.github.com/en/get-started/quickstart/hello-world) to get started. Once done, feel free to jump to this [section](https://05t3.github.io/posts/Raspberry-Pi-Setup/#:~:text=the%20new%20password.-,Configuring%20Static%20IP,-Next%20thing%20we).
 
 Lets get started... 😎🤏🏼
 
@@ -56,7 +56,38 @@ In less than 2 minutes, the process should be done.
 
 ![image](https://user-images.githubusercontent.com/58165365/151139116-daa46835-7130-4d4f-ac79-3c6e6ee29602.png)
 
-You can eject the SD card and plug it in your Raspberry PI and start it. Since we are doing a `headless configuration`, we are going to ssh into the server using MobaXterm . But wait, we need an Ip Address for this server. You can log into your home router and get the IP address or you can do a quick nmap scan on your network to determine what IP's have been assigned to your Pi. In my case, i got `192.168.1.19` & `192.168.1.20`
+## Configuring Wireless Adapter (Method 1)
+
+Close the raspberry pi imager and go to the root of the memory card on the file explorer.
+
+Locate a file called `network-config` and open it with any text editor. It should look something of the sort.
+
+![image](https://user-images.githubusercontent.com/58165365/152559517-d3fc87a2-fb9f-4a69-b5d6-05a32d559365.png)
+
+![image](https://user-images.githubusercontent.com/58165365/152559303-a532acb4-1183-46f0-afca-0aa5f49200c3.png)
+
+For now, i will show you how to configure your wireless adapter if you are planning on using it.
+
+1. Uncomment the wifi section as shown below.
+2. Modify the highlighted section as shown. Add your Home Router's name and Password.
+
+> NB: They both need to be inside `" "`
+
+![image](https://user-images.githubusercontent.com/58165365/152560081-d0529338-64ed-41b6-9bcb-88d342927767.png)
+
+3. You can delete the other section or let it remain as comments. I.e
+
+![image](https://user-images.githubusercontent.com/58165365/152561054-7c1e1806-828b-4258-a37a-5e5ddab6e51f.png)
+
+With that done, we should be able to use Wi-Fi without needing to connect an ethernet cable. But we also need to know our username. In this case, the ISO file i downloaded is already pre-configured with a user called `ubuntu`. How do i know that?🤔 Still in the root directory of the memory card, locate `user-data` file. you need to ensure this two options are set to `true`.
+
+![image](https://user-images.githubusercontent.com/58165365/152562847-2bcbab4a-ca10-44ee-b3d7-7e3e67e7fa3a.png)
+
+![image](https://user-images.githubusercontent.com/58165365/152562489-21478973-41c5-405d-96a2-82ba47606808.png)
+
+As you can see, we have a user called ubuntu and we should change the password on first boot as the default is set to `ubuntu`. `ssh_pwauth: true` simply means that we can be able to authenticate using passwords in ssh sessions.
+
+Eject the SD card and plug it in your Raspberry PI and start it. Since we are doing a `headless configuration`, we are going to ssh into the server using MobaXterm . But wait, we need an Ip Address for this server. You can log into your home router and get the IP address or you can do a quick nmap scan on your network to determine what IP's have been assigned to your Pi. In my case, i got `192.168.1.19` & `192.168.1.20`
 
 > A headless server is a computer without a monitor, keyboard, mouse, or other peripherals.Headless computers are normally controlled over the network.
 
@@ -80,6 +111,8 @@ Next thing we need to do is configure a static IP address on interface `eth0`. S
 
 > Please note: if you are using a linux server on VM, your interface name may not be `eth0`, most likely `enp0s3`. take note and work with that.
 
+> We could have configured the ethernet settings earlier in the `network-config` file but i wanted to show you two methods which you can use.
+
 ![image](https://user-images.githubusercontent.com/58165365/151323667-8abf2464-6d17-4609-a273-f3b013fefc5b.png)
 
 Modify the config file with the following lines as is. I've made it easier for you to avoid indentation issues. 😉
@@ -99,7 +132,7 @@ network:
   wifis:
     wlan0:
       access-points:
-        OSTE VLAN:
+        "OSTE VLAN":
           password: "@oste1234"
       dhcp4: true
       optional: true
@@ -168,6 +201,6 @@ In my Docker segment, '[Docker Installation](https://05t3.github.io/posts/Docker
 
 ---
 
-Congrats on reaching this far, we have successfully prepared our homelab envirnment. 🥳 Hope this article helped you in one way or another. So what next? 🤔 We have docker installed, right? I am going to take you through the first app/solution that we'll be using to manage, create , monitor and deploy our apps, this is Portainer.
+Congrats on reaching this far, we have successfully prepared our homelab envirnment. 🥳 Hope this article helped you in one way or another. So what next? 🤔 We have docker installed, right? I am going to take you through the first app/solution that we'll be using to manage, create , monitor and deploy our apps, this is [Portainer](https://05t3.github.io/posts/Portainer/).
 
 Stay tuned and thanks for following till this point. Keep safe and share the article if you found it helpful. 😁
