@@ -13,7 +13,9 @@ tags: [mbox, thunderbird, RFC, Takeout]
 
 > SHA-256: F77C28E0DCC8481279CF99F79DCAD3E5 EAE755884D335BD61B7ED13C34E8FD28
 
-WE first begin by checking the integrity of the file downloaded by comparing it to the SHA given.
+**To Modify**
+
+<!-- WE first begin by checking the integrity of the file downloaded by comparing it to the SHA given.
 
 ![image](https://user-images.githubusercontent.com/58165365/153607411-268c8040-ddfb-420b-babd-a0ef370188f5.png)
 
@@ -100,4 +102,4 @@ Parsing through the emails, i narrowed down senders
   https://www.howtogeek.com/709718/how-to-open-an-mbox-file-in-mozilla-thunderbird/
   https://business.tutsplus.com/articles/did-someone-open-and-read-your-email--cms-29389
   https://support.google.com/accounts/thread/124683174/best-way-to-view-google-takeout-gmail-and-other-products?hl=en
-  https://datatracker.ietf.org/doc/html/rfc5322
+  https://datatracker.ietf.org/doc/html/rfc5322 -->

