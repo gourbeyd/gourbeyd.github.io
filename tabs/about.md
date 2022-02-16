@@ -1,5 +1,5 @@
 ---
-title: Welcome to the Realm of Knowledge
+title: Welcome to Oste's Realm of Knowledge
 # The About page
 # v2.0
 # https://github.com/cotes2020/jekyll-theme-chirpy
@@ -7,7 +7,7 @@ title: Welcome to the Realm of Knowledge
 # MIT License
 ---
 
-<img align="center" alt="Stephen Kageche" img src="../../assets/img/Posts/resources/ascii%20art.PNG">
+<img align="center" alt="Stephen Kageche" img src="../../assets/img/Posts/banner.png">
 
 ### Hi there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="20px"> my name is 05t3 and i'm happy You are here😁
 
@@ -96,7 +96,7 @@ Cras neque ex, tincidunt ac dapibus sed, placerat quis ex. Phasellus nibh purus,
 
 <hr>
 
-<!--
+
 ### CTF's
 |Databases |
 |-----|
@@ -128,13 +128,15 @@ Cras neque ex, tincidunt ac dapibus sed, placerat quis ex. Phasellus nibh purus,
 Here are some ideas to get you started:
 - 👯 I’m looking to collaborate on ...
 - 💬 Ask me about ...
---> -->
+-->
+
+A little about myself:
 
 - 🐳 I’m currently working on Docker and Docker Security
-- 🐞 I’m currently learning Malware Analysis
+- 🐞 I’m currently learning Malware Analysis & Active Directory
 - 🤔 I’m looking for help with DFIR resources
 - 📫 How to reach me: Twitter, LinkedIn
 - 🙎🏾‍♂️ Pronouns: He/Him
-- ❤ I love: Rock/Jazz/LoFi beats/Afro beats/ , Adventure, Anime and networking
+- ❤ I love: Rock/Jazz/LoFi/Afrobeats/ , Adventure, Anime and networking
 
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="oste" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF5F5F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
