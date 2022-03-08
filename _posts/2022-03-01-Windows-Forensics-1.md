@@ -75,7 +75,9 @@ To score this question, you first need to identify connected drives on the syste
 
 ![image](https://user-images.githubusercontent.com/58165365/155884269-c75a2368-9423-486f-961e-7a5b784fd83d.png)
 
-In this case, we see the USB device with the friendly name 'USB'. Take note of its GUID. In order to get more information about the USB such as vendor id, product id, version of the USB device & time the devices were plugged into the system, we can the information on `SYSTEM\CurrentControlSet\Enum\USBSTOR`. Comparing the GUID we saw earlier with the Disk ID, we can acertain that `USB` is the one in the first row alongside the last connected timestamp.
+In this case, we see the USB device with the friendly name 'USB'. Take note of its GUID.
+
+In order to get more information about the USB such as vendor id, product id, version of the USB device & time the devices were plugged into the system, we can get the information on `SYSTEM\CurrentControlSet\Enum\USBSTOR`. Comparing the GUID we saw earlier with the Disk ID, we can acertain that `USB` is the one in the first row alongside the last connected timestamp.
 
 ![image](https://user-images.githubusercontent.com/58165365/155884462-977006e0-56f2-469a-b626-782ecea9658a.png)
 
