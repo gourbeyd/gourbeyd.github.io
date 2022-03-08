@@ -17,7 +17,9 @@ tags:
   ]
 ---
 
-![image](https://user-images.githubusercontent.com/58165365/151720953-a67781fc-e803-4ea4-b36e-1c28ed3bfa29.png)
+# Coming Soon
+
+<!-- ![image](https://user-images.githubusercontent.com/58165365/151720953-a67781fc-e803-4ea4-b36e-1c28ed3bfa29.png)
 Monitoring
 
 # Homer Dashboard
@@ -123,4 +125,4 @@ There are many other dashboards you can use such as:
 - [DashMachine](https://github.com/rmountjoy92/DashMachine)
 - [Homepage](https://github.com/tomershvueli/homepage)
 
-I will probably cover some of them in future blog posts. I hope you enjoyed this read and looking forward to hearing your thoughts on the same. Lemmy know what you have been using in the comment section. Unti next time, take care and keep safe.
+I will probably cover some of them in future blog posts. I hope you enjoyed this read and looking forward to hearing your thoughts on the same. Lemmy know what you have been using in the comment section. Unti next time, take care and keep safe. -->
