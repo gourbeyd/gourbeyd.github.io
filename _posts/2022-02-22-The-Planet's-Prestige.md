@@ -2,7 +2,7 @@
 layout: post
 title: "The Planet's Prestige"
 date: 2022-02-15
-image: ../../assets/img/Posts/
+image: ../../assets/img/Posts/Gallery.png
 categories: [Tryhackme, Easy]
 tags: [rkhunter, nano, sqlmap, sqlinjection, searchsploit, CMS, wfauzz, linux]
 ---
