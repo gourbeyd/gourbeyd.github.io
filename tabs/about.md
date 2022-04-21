@@ -52,10 +52,10 @@ You are visitor number <img src="https://profile-counter.glitch.me/05t3/count.sv
 
 <img align="right" alt="GIF" src="../../assets/img/Posts/resources/code.gif" width="375" height="240" />
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget volutpat velit. Integer nec aliquam nisl. Aenean pharetra congue arcu quis vestibulum.
-
+Red teaming at night and Blue teaming by day.😅 Self-taught Forensic Investigator with keen interest in Disk, Memory, Network and Email forensics.During my free time, i enjoy messing around with my homelab, Containerisation technology (Docker), reading technical blogs, bug reports and current affairs. I enjoy playing CTF's with the [fr334aks-Mini](https://twitter.com/fr334aksmini) team where i majorly focus on Forensic challenges.
 <br>
-Cras neque ex, tincidunt ac dapibus sed, placerat quis ex. Phasellus nibh purus, consectetur in mauris ut, molestie eleifend nibh. Aenean a placerat odio, posuere tincidunt tortor. Vivamus ac ultricies turpis.Duis viverra, magna in elementum lacinia, elit mi convallis nulla, sit amet commodo eros tellus ac risus. Nullam egestas, elit at pharetra imperdiet, tellus lacus scelerisque turpis, non egestas sem turpis eget neque. Fusce quis purus id orci eleifend tempus. <br>
+
+I'm currently job hunting and praying to land a Job in SOC. <br>
 
 <hr>
 
