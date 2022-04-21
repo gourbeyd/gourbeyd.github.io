@@ -4,7 +4,7 @@ title: "PwnDrive Academy - 10.150.150.11"
 date: 2022-04-21
 image: ../../assets/img/Posts/pwndriveacademy.png
 categories: [PwnTillDawn, PTD-EASY]
-tags: [wireshark, BrimSecurity, A-Packets, SMTP, IMF, virus total]
+tags: [metasploit, CVE-2017-0143, smb-vuln-ms17-010, EternalBlue]
 ---
 
 We first begin by performing an nmap scan to determine what ports are open and what services are running behind them.
@@ -296,5 +296,5 @@ dir Desktop
 
 That's it for this box. It was preety easy to exploit and get the flag. Special shout out to the team behind the PTD network:
 
-- https://www.wizlynxgroup.com/
-- https://online.pwntilldawn.com/
+- [https://www.wizlynxgroup.com/](https://www.wizlynxgroup.com/)
+- [https://online.pwntilldawn.com/](https://online.pwntilldawn.com/)
