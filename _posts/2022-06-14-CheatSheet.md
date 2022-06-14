@@ -21,7 +21,9 @@ These are among the common Linux command line utilities that can be used by T1 A
 - **curl**
 - **wget**
 
-# Wget
+<details>
+<summary>Wget</summary>
+<pre>
 
 - Installation
 
@@ -97,3 +99,6 @@ https://download.fedoraproject.org/pub/fedora/linux/releases/28/Server/x86_64/is
 `wget -q -O - "http://wordpress.org/latest.tar.gz" | tar -xzf - -C /var/www`
 
 In the following example, wget will quietly ( flag `-q`) download and output the latest WordPress version to stdout ( flag `-O`) and pipe it to the tar utility, which will extract the archive to the /var/www directory.
+
+</pre>
+</details>
