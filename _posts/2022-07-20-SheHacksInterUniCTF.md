@@ -212,7 +212,8 @@ exiftool -comment='Q29uZ3JhdHMsaGVyZSBpcyB5b3VyIGZsYWc6IEZsYWd7SV9LbjN3X1kwdV93M
 <details>
 <summary>Memory Forensics Questions</summary>
 <pre>
- 
+
+```bash
 ## Memory 1
 
 > _The SOC team noticed unusual traffic coming from one of the office workstations. They dumped the memory for you and belive you can help them figure out what was happening. Can you figure out which process seems unusual alongside its Parent Process ID (PPID)_
@@ -252,6 +253,7 @@ Points to allocate: 200
 Flag Format: Flag{/xx/x_xx_x/xx/}
 
 Points to allocate: 500
+```
 
 </pre>
 </details>
@@ -870,7 +872,7 @@ Lets sum up our investigation by highlighting some findings we got:
 
 We can then concluded that the Victim's computer was infected with a trojan
 
-# Prevention
+## Prevention
 
 We can assume that this was a personal computer. What if this scenario was in an organization and the trojan was sent as a phishing campaign to all users in the organization?
 
@@ -896,7 +898,7 @@ Awesome, we found another ip address `188.40.0.138`
 
 We can go further and see if we can associate these IPs with possible hostnames using a passive DNS. For this case we’ll use a public passive DNS service named `Mnemonic`
 
-[Argus Managed Defence | mnemonic](https://passivedns.mnemonic.no/)
+[Argus Managed Defence - mnemonic](https://passivedns.mnemonic.no/)
 
 _188.40.0.138_
 
@@ -908,7 +910,7 @@ _41.168.5.140_
 
 At this point you should then proceed and analyze each possible hostname to see if they could be linked to our trojan (That is: Does the time of the DNS record correspond to the time of the infection?, Is it a legitimate website?). We would then give those IOCs to the SOC team for a proper detection of this trojan infection on the company’s infrastructure using custom SIEM detection rules.
 
-# Deletion
+## Deletion
 
 It is common for most malware to make their execution automatic at every system startup, hence making their deletion difficult. To see if this is the case with Cridex we can take a look at the registry entries used during the system startup.
 
@@ -1034,7 +1036,7 @@ Expected flags:
 | Memory 4     | Flag{Robert}                                                 |
 | Memory 5     | Flag{/zb/v_01_a/in/}                                         |
 
-# Resources
+## Resources
 
 - [Memory Samples - volatilityfoundation / volatility](https://github.com/volatilityfoundation/volatility/wiki/Memory-Samples)
 - [Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder ](https://attack.mitre.org/techniques/T1547/001/)
@@ -1241,3 +1243,5 @@ We can also throw in a `-c` to display only VBA source code and not analyze it
 Well, if you'd like the output of the above commands merged into one, use `--deobf`
 
 ![image](https://user-images.githubusercontent.com/58165365/180060706-372a0c57-b7eb-4516-8d6c-db8115d556b0.png)
+
+Thats it guys...Thanks for coming this far. Hope you learned a thing or two . If you have any questions, feedback, suggestions, feel free to reach out on twitter Twitter [**@oste_ke**](https://twitter.com/oste_ke)
