@@ -52,10 +52,16 @@ You are visitor number <img src="https://profile-counter.glitch.me/05t3/count.sv
 
 <img align="right" alt="GIF" src="../../assets/img/Posts/resources/code.gif" width="375" height="240" />
 
-Red teaming at night and Blue teaming by day.😅 Self-taught Forensic Investigator with keen interest in Disk, Memory, Network and Email forensics.During my free time, i enjoy messing around with my homelab, Containerisation technology (Docker), reading technical blogs, bug reports and current affairs. I enjoy playing CTF's with the [fr334aks-Mini](https://twitter.com/fr334aksmini) team where i majorly focus on Forensic challenges.
+Red teaming at night and Blue teaming by day.😅 I am a SOC Analyst & Self-taught Forensic Investigator with keen interest in Disk, Memory, Network and Email forensics.During my free time, i enjoy messing around with my homelab, Containerisation technology (Docker), reading technical blogs, bug reports and current affairs. I enjoy playing CTF's with the [fr334aks-Mini](https://twitter.com/fr334aksmini) team where i majorly focus on Forensic challenges.
 <br>
 
-I'm currently job hunting and praying to land a Job in SOC. <br>
+As part of my Job (detecting an catching the bad guys), i contribute to the AbuseIPDB Comunity by reporting sus IP's picked up.
+
+<a href="https://www.abuseipdb.com/user/90480" title="AbuseIPDB is an IP address blacklist for webmasters and sysadmins to report IP addresses engaging in abusive behavior on their networks">
+	<img src="https://www.abuseipdb.com/contributor/90480.svg" alt="AbuseIPDB Contributor Badge" style="width: 269px;border-radius: 5px;border-top: 5px solid #058403;border-right: 5px solid #111;border-bottom: 5px solid #111;border-left: 5px solid #058403;padding: 5px;">
+</a>
+ 
+<br>
 
 <hr>
 
@@ -133,7 +139,7 @@ Here are some ideas to get you started:
 A little about myself:
 
 - 🐳 I’m currently working on Docker and Docker Security
-- 🐞 I’m currently learning Malware Analysis & Active Directory
+- 🐞 I’m currently learning Malware Analysis, Active Directory, DevOps & Automation
 - 🤔 I’m looking for help with DFIR resources
 - 📫 How to reach me: Twitter, LinkedIn
 - 🙎🏾‍♂️ Pronouns: He/Him
