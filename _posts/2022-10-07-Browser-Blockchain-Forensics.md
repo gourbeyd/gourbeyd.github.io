@@ -67,6 +67,24 @@ Moving on, we have the second tab, **Cached Images** which displays cache images
 
 ### 1. Users in the organization are encouraged not to save passwords on their browsers. However the user has a common email address and password used on several platforms. With that in mind, the user created a pastebin and locked the paste. Can you retrieve the contents of the paste?
 
+Applying `pastebin` as our filter, we get a link to the paste created, `https://pastebin.com/3i48shgE` . However, its password protected.
+
+![image](https://user-images.githubusercontent.com/58165365/194722582-949ba138-0207-4656-9186-6e285f065af5.png)
+
+![image](https://user-images.githubusercontent.com/58165365/194722796-0e92bedd-b019-4c48-a77a-b58872565511.png)
+
+Inspecting the form history data we get the password used : `jstar1337`
+
+![image](https://user-images.githubusercontent.com/58165365/194722710-4eca85e7-19cf-4ba5-ae6a-d49a448345d8.png)
+
+Visiting the link we found earlier and try use the password retrieved, we get the flag:
+
+![image](https://user-images.githubusercontent.com/58165365/194722796-0e92bedd-b019-4c48-a77a-b58872565511.png)
+
+![image](https://user-images.githubusercontent.com/58165365/194722833-def070c7-fe61-42bd-ad60-e6132d8f1991.png)
+
+Flag `ccke{11221e90758526cf7249771fee28ab54}`
+
 ### 2. The company has a policy against employees visiting social media on corporate devices. What sites has the employee visited, listed alphabetically?
 
 ---
@@ -93,7 +111,7 @@ We can also confirm the HEX Magic Bytes by using the `xxd` command as shown belo
 
 ![image](https://user-images.githubusercontent.com/58165365/190278384-ecefaa05-a928-4149-9a1b-67a5b1c44430.png)
 
-Starting with [VirusTotal](https://www.virustotal.com/gui/file/22f524abc98f958705febd3761bedc85ec1ae859316a653b67c0c01327533092/detection)
+The next series of steps you'd have taken was perform some Crowdsourced intelligence. Starting with [VirusTotal](https://www.virustotal.com/gui/file/22f524abc98f958705febd3761bedc85ec1ae859316a653b67c0c01327533092/detection)
 we get hits to a malware called `Phorpiex`.
 
 ![image](https://user-images.githubusercontent.com/58165365/190242207-bf669525-0e79-45dc-b96b-6a9d5c779b46.png)
@@ -166,3 +184,5 @@ Scrolling further on the strings, we get some potential C2 callback URL's
 ![image](https://user-images.githubusercontent.com/58165365/190262923-05abc66d-3f8b-46d5-b51d-91931d6ddf01.png)
 
 Flag: `ccke{http://185.215.113.66/twizt/}`
+
+Easy Peasy, huh 😅
