@@ -7,11 +7,11 @@ categories: [HOMELAB]
 tags: [docker, trilium, notes, ubuntu, self-hosted]
 ---
 
-Hello and happy new year. Welcome to my first blog in '23 where i will be showing you haw easy you can self-host your note-taking application at home. I feel like the search for a good notetaking platform is never-ending. I've been using GithubGists, Obsidian and Notion for preety much 2 years now but this year i decided to try something new. Trilium Notes, a project by [zadam](https://github.com/zadam/trilium/) is a hierarchical note taking application with focus on building large personal knowledge bases.
+Hello and happy new year. Welcome to my first blog in '23 where i will be showing you how easy you can self-host your note-taking application at home. I feel like the search for a good notetaking platform is never-ending. I've been using Github Gists, Obsidian and Notion for preety much 2 years now but this year i decided to try something new. Trilium Notes, a project by [zadam](https://github.com/zadam/trilium/) is a hierarchical note taking application with focus on building large personal knowledge bases.
 
 It is provided as either desktop application (Linux and Windows) or web application hosted on your server (Linux). Mac OS desktop build is available, but it is [unsupported](https://github.com/zadam/trilium/wiki/FAQ#mac-os-support).
 
-In my case, i'm hosting it on my home network on a Raspberry-Pi server, running Ubuntu server. Deployment method is a docker container.😁 I followed [zadam's](https://github.com/zadam/trilium/wiki/Docker-server-installation) knowledge base.
+With that said, lets get started.🙂 I'm hosting it on my home network on a Raspberry-Pi, running Ubuntu server. Deployment method is a docker container.😁 I followed [zadam's](https://github.com/zadam/trilium/wiki/Docker-server-installation) knowledge base.
 
 I used this docker-compose file to bring up the container:
 
@@ -63,31 +63,45 @@ Before we even start diving in, lets look at how much resources are consumed by 
 
 _Very minimal. 👌_
 
+---
+
 Poking around the templates on the left navigation pane, we get a variety of good looking and helpful teamplates. For example:
 
 _[Weight Tracker](https://github.com/zadam/trilium/wiki/Weight-tracker)_
 
 ![image](https://user-images.githubusercontent.com/58165365/210438779-3332945f-56a9-442f-a7d0-d03708c953fe.png)
 
+---
+
 _**Statistics**_
 
 ![image](https://user-images.githubusercontent.com/58165365/210439070-ced0b3e8-407f-4687-b4db-053a6df0f5f2.png)
+
+---
 
 _**Mermaid Diagrams**_
 
 ![image](https://user-images.githubusercontent.com/58165365/210439430-60e0bffd-f616-4a4f-93a7-a6d5a1d24740.png)
 
+---
+
 _**Canvas Notes**_
 
 ![image](https://user-images.githubusercontent.com/58165365/210439531-dc4807e8-55dc-43e5-932d-e9f149b40c13.png)
+
+---
 
 _**Formatting Options**_
 
 ![image](https://user-images.githubusercontent.com/58165365/210439672-2f08f6bd-2c7e-42c1-848b-34678501557b.png)
 
+---
+
 _**Family Trees**_
 
 ![image](https://user-images.githubusercontent.com/58165365/210439965-3796c9af-4bbb-4ee0-9a1b-db091d819ccb.png)
+
+---
 
 Ohh, and its search functionality is powerfull too 🙌
 
@@ -113,8 +127,8 @@ I also tried creating a dummy text as shown:
 
 - It looks preety awesome and powerful and cant wait to unleash its full potential overtime. However, i feel like its abit complex 🙈. _Time will tell_ .
 - Can I compare it to Notion? 🙅‍♂️, Notion is quite powerful with tons of integrations (GitHub, Figma, Trello, GoogleDrive, CodePen. Slack, Zoom, Asana). I'm yet to see if Trilium accepts integrations or installing plugins.😁
-- Can you import or export notes in Trillium? Trilium can import ENEX files which are used by Evernote for backup/export and also markdown. You can also export notes as MD, HTML and OPML. Compared to notion, i feel like notion is King, in the sense that i can import notes from/as: Evernote, Trello, Asana, Confluence, txt, MD, CSV, HTML, Word, Google Docs, Dropbox paper, Quip and Workflowy. Exporting? PDF,HTML, MD & CSV. Notion wins on this one.
-- Lets talk about synchronization. Trillium supports synchronization between desktop client and a server instance. In my case I am using a server instance. If i had a desktop client on a different workstation and wanted to sync notes with my server instance, I would select that option when doing the initial installation setup as shown:
+- Can you import or export notes on Trilium? Trilium can import ENEX files which are used by Evernote for backup/export and also markdown. You can also export notes as MD, HTML and OPML. Compared to notion, i feel like notion is King, in the sense that i can import notes from/as: Evernote, Trello, Asana, Confluence, txt, MD, CSV, HTML, Word, Google Docs, Dropbox paper, Quip and Workflowy. Exporting? PDF,HTML, MD & CSV. Notion wins on this one.
+- Lets talk about synchronization. Trilium supports synchronization between desktop client and a server instance. In my case I am using a server instance. If i had a desktop client on a different workstation and wanted to sync notes with my server instance, I would select that option when doing the initial installation setup as shown in the third option below:
 
 ![image](https://user-images.githubusercontent.com/58165365/210438263-507006f5-7d75-410a-82e1-156e655dee54.png)
 
@@ -124,4 +138,4 @@ From their Github README, they boast of the following features:
 
 ![image](https://user-images.githubusercontent.com/58165365/210756687-9752ad56-c213-49f4-84ad-6e7578b43c0d.png)
 
-Since i haven't tested them all, i will do a proper review of the same in subsequent blogs. Thanks for reading up to this point, lemmy know your thought on the same should youy try it out. If you have any other opensource solutions or fun projects that you would want me to cover, feel free to reach out on the same.
+Since i haven't tested them all, i will do a proper review of the same in subsequent blogs. Thanks for reading up to this point, lemmy know your thought on the same should you try it out. If you have any other #OpenSource deployable solutions or fun projects that you would want me to cover, feel free to reach out on the same. Cheers ✌🏼
