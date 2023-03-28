@@ -2,12 +2,14 @@
 layout: post
 title: "Hello, world"
 date: 2023-03-28
-image: ../../assets/img/Posts/SteelMountain.jpg
+image: ../../assets/img/Posts/helloWorld.jpg
 categories: [lifestyle]
 tags: [letsgo]
 ---
 
 Welcome on my blog 😎
+
+
 
 I made it to share some write-ups of boxes/challenges to help me keep track of techniques to use. 🏴‍☠️ 
 
