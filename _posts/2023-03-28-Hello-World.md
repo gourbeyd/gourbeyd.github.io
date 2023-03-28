@@ -3,8 +3,8 @@ layout: post
 title: "Hello, world"
 date: 2023-03-28
 image: ../../assets/img/Posts/SteelMountain.jpg
-categories: [Tryhackme, Easy]
-tags: [powerup]
+categories: [lifestyle]
+tags: [letsgo]
 ---
 
 Welcome on my blog 😎
