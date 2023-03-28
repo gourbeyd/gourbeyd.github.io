@@ -7,8 +7,6 @@ title: Welcome to Actih's Blog
 # MIT License
 ---
 
-<img align="center" alt="Stephen Kageche" img src="../../assets/img/Posts/banner.png">
-
 ### Hi there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="20px">
 
 You are visitor number <img src="https://profile-counter.glitch.me/gourbeyd/count.svg" />
